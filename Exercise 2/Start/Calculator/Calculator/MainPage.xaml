@@ -27,7 +27,8 @@
             #808080 (Dark Gray)
         -->
         
-        <Label Grid.Row="0"
+        <Label x:Name="resultText"
+               Grid.Row="0"
                Grid.Column="0"
                Grid.ColumnSpan="4"
                Text="0"
