@@ -6,8 +6,8 @@
     xmlns:local="clr-namespace:Calculator;assembly=Calculator">
 
     <Grid
-        Padding="5,0,5,5"
-        BackgroundColor="Black"
+        Padding="5"
+        BackgroundColor="{x:Static local:SharedResources.CanvasBkColor}"
         ColumnSpacing="1"
         RowSpacing="1">
 
@@ -40,13 +40,13 @@
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="4"
-            BackgroundColor="Black"
+            BackgroundColor="{x:Static local:SharedResources.DisplayLabelBkColor}"
             FontAttributes="Bold"
             FontSize="48"
             HorizontalTextAlignment="End"
             LineBreakMode="NoWrap"
             Text="0"
-            TextColor="White"
+            TextColor="{x:Static local:SharedResources.DisplayLabelForeColor}"
             VerticalTextAlignment="Center" />
 
         <!--  7 - 8 - 9 - /  -->
@@ -54,35 +54,35 @@
         <Button
             Grid.Row="1"
             Grid.Column="0"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="7"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="1"
             Grid.Column="1"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="8"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="1"
             Grid.Column="2"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="9"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="1"
@@ -93,42 +93,42 @@
             FontAttributes="Bold"
             FontSize="36"
             Text="/"
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.OpButtonForeColor}" />
 
         <!--  4 - 5 - 6 - X  -->
 
         <Button
             Grid.Row="2"
             Grid.Column="0"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="4"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="2"
             Grid.Column="1"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="5"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="2"
             Grid.Column="2"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="6"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="2"
@@ -139,42 +139,42 @@
             FontAttributes="Bold"
             FontSize="36"
             Text="X"
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.OpButtonForeColor}" />
 
         <!--  1 - 2 - 3 - (-)  -->
 
         <Button
             Grid.Row="3"
             Grid.Column="0"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="1"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="3"
             Grid.Column="1"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="2"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="3"
             Grid.Column="2"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="3"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="3"
@@ -185,7 +185,7 @@
             FontAttributes="Bold"
             FontSize="36"
             Text="-"
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.OpButtonForeColor}" />
 
         <!--  0 - +  -->
 
@@ -193,13 +193,13 @@
             Grid.Row="4"
             Grid.Column="0"
             Grid.ColumnSpan="3"
-            BackgroundColor="White"
+            BackgroundColor="{x:Static local:SharedResources.NumberButtonBkColor}"
             Clicked="OnSelectNumber"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="0"
-            TextColor="Black" />
+            TextColor="{x:Static local:SharedResources.NumberButtonForeColor}" />
 
         <Button
             Grid.Row="4"
@@ -210,20 +210,20 @@
             FontAttributes="Bold"
             FontSize="36"
             Text="+"
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.OpButtonForeColor}" />
 
         <!--  C - =  -->
 
         <Button
             Grid.Row="5"
             Grid.Column="0"
-            BackgroundColor="#808080"
+            BackgroundColor="{x:Static local:SharedResources.ClearButtonBkColor}"
             Clicked="OnClear"
             CornerRadius="0"
             FontAttributes="Bold"
             FontSize="36"
             Text="C"
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.ClearButtonForeColor}" />
 
         <Button
             Grid.Row="5"
@@ -235,7 +235,7 @@
             FontAttributes="Bold"
             FontSize="36"
             Text="="
-            TextColor="White" />
+            TextColor="{x:Static local:SharedResources.OpButtonForeColor}" />
 
     </Grid>
 
