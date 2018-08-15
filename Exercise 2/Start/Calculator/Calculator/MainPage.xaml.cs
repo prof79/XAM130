@@ -27,6 +27,9 @@ namespace Calculator
         public MainPage()
 		{
 			InitializeComponent();
+
+            // Reset calculator to initial state
+            OnClear(this, EventArgs.Empty);
 		}
 
         #endregion
