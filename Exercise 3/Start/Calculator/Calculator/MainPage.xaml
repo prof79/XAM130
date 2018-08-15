@@ -5,11 +5,27 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Calculator;assembly=Calculator">
 
-    <Grid
-        Padding="5"
-        BackgroundColor="{x:Static local:SharedResources.CanvasBkColor}"
-        ColumnSpacing="1"
-        RowSpacing="1">
+    <Grid Padding="5" BackgroundColor="{x:Static local:SharedResources.CanvasBkColor}">
+
+        <Grid.ColumnSpacing>
+
+            <OnPlatform
+                x:TypeArguments="x:Double"
+                Android="1"
+                WinPhone="4"
+                iOS="1" />
+
+        </Grid.ColumnSpacing>
+
+        <Grid.RowSpacing>
+
+            <OnPlatform
+                x:TypeArguments="x:Double"
+                Android="1"
+                WinPhone="4"
+                iOS="1" />
+
+        </Grid.RowSpacing>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
