@@ -13,10 +13,12 @@ namespace Calculator
             => Color.Black;
 
         public static Color DisplayLabelBkColor
-            => Color.Black;
+            //=> Color.Black;
+            => Color.LightBlue;
 
         public static Color DisplayLabelForeColor
-            => Color.White;
+            //=> Color.White;
+            => Color.Black;
 
         public static Color NumberButtonBkColor
             => Color.White;
@@ -25,7 +27,8 @@ namespace Calculator
             => Color.Black;
 
         public static Color OpButtonBkColor
-            => Color.FromRgb(0xff, 0xa5, 0x00);
+            //=> Color.FromRgb(0xff, 0xa5, 0x00);
+            => Color.DarkRed;
 
         public static Color OpButtonForeColor
             => Color.White;
